@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fieldnote.Mobile.NewCasePage"
+             Title="New imaging case"
+             BackgroundColor="#F4F7F6">
+    <ScrollView>
+        <VerticalStackLayout Padding="20,18,20,26" Spacing="13">
+            <Label Text="CASE INTAKE" FontSize="9" CharacterSpacing="1" TextColor="#82918E" />
+            <Label Text="Add imaging case" FontSize="25" FontAttributes="Bold" TextColor="#27373D" />
+            <Label Text="Use a fictional or non-identifying reference. Do not enter real patient information." FontSize="12" TextColor="#829094" />
+
+            <Label Text="Case reference" FontSize="12" FontAttributes="Bold" TextColor="#566469" />
+            <Entry x:Name="ReferenceEntry" Placeholder="e.g. KJ-024" MaxLength="32" BackgroundColor="White" />
+
+            <Label Text="Imaging type" FontSize="12" FontAttributes="Bold" TextColor="#566469" />
+            <Picker x:Name="TypePicker" Title="Choose imaging type" BackgroundColor="White" />
+
+            <Label Text="Priority label" FontSize="12" FontAttributes="Bold" TextColor="#566469" />
+            <Picker x:Name="PriorityPicker" Title="Choose a staff-entered label" BackgroundColor="White" />
+
+            <Label Text="Non-identifying context (optional)" FontSize="12" FontAttributes="Bold" TextColor="#566469" />
+            <Editor x:Name="NotesEditor" Placeholder="Context for the clinician reviewer…" MaxLength="240" AutoSize="TextChanges" BackgroundColor="White" />
+
+            <Button Text="Choose image for local preview" Clicked="OnChooseImageClicked" BackgroundColor="White" TextColor="#3F7B65" BorderColor="#DCE7E0" BorderWidth="1" CornerRadius="8" />
+            <Image x:Name="ImagePreview" HeightRequest="180" Aspect="AspectFit" IsVisible="False" />
+            <Label x:Name="ImageDisclaimer" Text="Image is only previewed on this screen and is never saved or transmitted." FontSize="10" TextColor="#83918C" />
+
+            <Border Stroke="#F0E7D3" BackgroundColor="#FBF8EF" StrokeShape="RoundRectangle 8" Padding="12">
+                <Label Text="No diagnosis is generated. This prototype is not for real patient data or clinical use." FontSize="11" TextColor="#806D43" />
+            </Border>
+
+            <Button Text="Add to case queue" Clicked="OnSaveClicked" BackgroundColor="#1E7565" TextColor="White" FontAttributes="Bold" CornerRadius="8" />
+            <Button Text="Cancel" Clicked="OnCancelClicked" BackgroundColor="Transparent" TextColor="#66747A" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
