@@ -1,6 +1,6 @@
-# Fieldnote Android app
+# NEUROLINK-FIELDNOTE Android app
 
-Fieldnote is a native Android workflow prototype for organizing imaging cases and clinician review. It is not a diagnostic tool or a medical device.
+NEUROLINK-FIELDNOTE is a native Android workflow prototype for organizing imaging cases and clinician review. It is not a diagnostic tool or a medical device.
 
 ## Build the Android app
 

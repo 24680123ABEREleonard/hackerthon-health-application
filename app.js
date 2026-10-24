@@ -1,6 +1,6 @@
 "use strict";
 
-const STORAGE_KEY = "fieldnote-demo-cases-v1";
+const STORAGE_KEY = "neurolink-fieldnote-demo-cases-v1";
 const initialCases = [
   { id: "KJ-026", type: "X-ray", detail: "Chest · 2 views", priority: "Urgent", status: "Needs review", added: "09:42", today: true, notes: "Fictional demo case. Review queue status only; no analysis performed." },
   { id: "KJ-025", type: "Ultrasound", detail: "Abdominal", priority: "Routine", status: "Reviewed", added: "09:18", today: true, notes: "Fictional demo case. Review queue status only; no analysis performed." },
